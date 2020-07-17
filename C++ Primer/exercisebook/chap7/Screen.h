@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Screen
+{
+public:
+    Screen() = default;
+    Screen(unsigned h, unsigned w) : height(h), width(w), contents(h * w, ' '){};
+    Screen(unsigned h, unsigned w, char c) : height(h), width(w), contents(h * w, c){};
+
+private:
+    unsigned height = 0, width = 0;
+    unsigned cursor = 0;
+    string contents;
+
+public:
+    Screen& move(unsigned r, unsigned c)
+    {
+        cursor = r * width + c;
+        return *this;
+    }
+    Screen& set(char ch)
+    {
+        contents[cursor] = ch;
+        return *this;
+    }
+    Screen& set(unsigned r, unsigned c, char ch)
+    {
+        contents[r * width + c] = ch;
+        return *this;
+    }
+    Screen& display()
+    {
+        cout << contents;
+        return *this;
+    }
+};
