@@ -67,7 +67,12 @@
 			"typeinfo": "cpp",
 			"unordered_map": "cpp",
 			"utility": "cpp",
-			"fstream": "cpp"
+			"fstream": "cpp",
+			"forward_list": "cpp",
+			"deque": "cpp",
+			"iomanip": "cpp",
+			"list": "cpp",
+			"stack": "cpp"
 		}
 	}
 }
