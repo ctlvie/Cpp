@@ -23,6 +23,7 @@
     "files.associations": {
         "algorithm": "cpp",
         "iostream": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "iosfwd": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }
