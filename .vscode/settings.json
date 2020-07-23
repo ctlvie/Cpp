@@ -24,6 +24,8 @@
         "algorithm": "cpp",
         "iostream": "cpp",
         "functional": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "memory": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }
